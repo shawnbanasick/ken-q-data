@@ -596,6 +596,12 @@
         localStorage.setItem("pyramidRange", optionSelected);
 
         switch (optionSelected) {
+            case "-1,1":
+                range11();
+                break;
+            case "-2,2":
+                range22();
+                break;
             case "-3,3":
                 range33();
                 break;
@@ -644,6 +650,57 @@
     // *********************************************************************   view
     // ******* modify display of Q-sort Column Dropdowns  **************************
     // *****************************************************************************
+
+    function range11() {
+        $("#pyramidShape1, #neg6state, #label-6").hide();
+        $("#pyramidShape2, #neg5state, #label-5").hide();
+        $("#pyramidShape3, #neg4state, #label-4").hide();
+
+        $("#pyramidShape4, #neg3state, #label-3").hide();
+        $("#pyramidShape5, #neg2state, #label-2").hide();
+        $("#pyramidShape6, #neg1state, #label-1").show();
+        $("#pyramidShape7, #neg0state, #label-0").show();
+        $("#pyramidShape8, #pos1state, #label1").show();
+        $("#pyramidShape9, #pos2state, #label2").hide();
+        $("#pyramidShape10, #pos3state, #label3").hide();
+
+        $("#pyramidShape11, #pos4state, #label4").hide();
+        $("#pyramidShape12, #pos5state, #label5").hide();
+        $("#pyramidShape13, #pos6state, #label6").hide();
+        $("#pyramidShape14, #pos7state, #label7").hide();
+        $("#pyramidShape15, #pos8state, #label8").hide();
+        $("#pyramidShape16, #pos9state, #label9").hide();
+        $("#pyramidShape17, #pos10state, #label10").hide();
+        $("#pyramidShape18, #pos11state, #label11").hide();
+        $("#pyramidShape19, #pos12state, #label12").hide();
+        $("#pyramidShape20, #pos13state, #label13").hide(); 
+    }
+        
+    function range22() {
+        $("#pyramidShape1, #neg6state, #label-6").hide();
+        $("#pyramidShape2, #neg5state, #label-5").hide();
+        $("#pyramidShape3, #neg4state, #label-4").hide();
+
+        $("#pyramidShape4, #neg3state, #label-3").hide();
+        $("#pyramidShape5, #neg2state, #label-2").show();
+        $("#pyramidShape6, #neg1state, #label-1").show();
+        $("#pyramidShape7, #neg0state, #label-0").show();
+        $("#pyramidShape8, #pos1state, #label1").show();
+        $("#pyramidShape9, #pos2state, #label2").show();
+        $("#pyramidShape10, #pos3state, #label3").hide();
+
+        $("#pyramidShape11, #pos4state, #label4").hide();
+        $("#pyramidShape12, #pos5state, #label5").hide();
+        $("#pyramidShape13, #pos6state, #label6").hide();
+        $("#pyramidShape14, #pos7state, #label7").hide();
+        $("#pyramidShape15, #pos8state, #label8").hide();
+        $("#pyramidShape16, #pos9state, #label9").hide();
+        $("#pyramidShape17, #pos10state, #label10").hide();
+        $("#pyramidShape18, #pos11state, #label11").hide();
+        $("#pyramidShape19, #pos12state, #label12").hide();
+        $("#pyramidShape20, #pos13state, #label13").hide();
+    }
+
 
     function range33() {
         $("#pyramidShape1, #neg6state, #label-6").hide();

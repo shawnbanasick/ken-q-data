@@ -9,7 +9,7 @@
 var resources = {
     'en-us': {
         "translation": {
-            "versionNumber": "Version 1.0.2 (June 9, 2017)",
+            "versionNumber": "Version 1.0.3 (September 7, 2018)",
             "Translation by": "",
             "Top": "Top",
             "aData": "1. Data Input and Conversion",
@@ -610,25 +610,25 @@ var resources = {
 // JSlint declarations
 /* global $, i18n, QAV, document */
 
-(function () {
+(function() {
     i18n
         .init({
             "lng": 'en-us',
             "resStore": resources,
             "useDataAttrOptions": true,
             "fallbackLng": 'en-us'
-        }, function () {
+        }, function() {
             $(document).i18n();
         });
 
-    $('.languageSelect').on("change", function () {
+    $('.languageSelect').on("change", function() {
         var lang = $(this).val();
         // change the UI language variable
         QAV.setState("language", lang);
 
         i18n.init({
             lng: lang
-        }, function () {
+        }, function() {
             $(document).i18n();
         });
     });
